@@ -21,5 +21,5 @@ if user_input and button:
 user_input = st.text_area("Enter the article link you want to summarize:")
 urlbutton = st.button('Summarize')
 if user_input and urlbutton:
-    response = model.generate_content('Give summary of article given in the link: ' + user_input)
+    response = model.generate_content('Give summary of article in 100 words, find relevant keywords and highlight them, and at last suggest articles related to this one, given in the link: ' + user_input)
     st.write(response.text)
