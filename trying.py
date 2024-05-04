@@ -1,7 +1,8 @@
 import os
 import google.generativeai as genai
-from constants import gemini_key
 import streamlit as st
+
+gemini_key = os.environ['gemini_key']
 
 st.image("https://t3.ftcdn.net/jpg/05/67/13/22/360_F_567132273_mfAcrOWFm37aF7gbKtgqOQCEQpUQBo9v.jpg", width = 200, caption = "Gemini-pro AI Model")
 st.title("Article Summarization using Gemini-pro AI Model")
