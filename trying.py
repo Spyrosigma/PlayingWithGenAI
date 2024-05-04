@@ -2,13 +2,12 @@ import os
 import google.generativeai as genai
 import streamlit as st
 
-gemini_key = os.environ['gemini_key']
+
+genai.configure(api_key = os.environ['gemini_key'])
 
 st.image("https://t3.ftcdn.net/jpg/05/67/13/22/360_F_567132273_mfAcrOWFm37aF7gbKtgqOQCEQpUQBo9v.jpg", width = 200, caption = "Gemini-pro AI Model")
 st.title("Article Summarization using Gemini-pro AI Model")
 st.write("This app uses the Gemini-pro AI model to summarize articles and provide recent article links based on the topic name you provide.")
-os.environ['GOOGLE_API_KEY'] = gemini_key
-genai.configure(api_key = os.environ['GOOGLE_API_KEY'])
 model = genai.GenerativeModel('gemini-pro')
 
 
