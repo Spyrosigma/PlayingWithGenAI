@@ -12,5 +12,5 @@
     ```
 3. Run the app
     ```bash
-        streamlit run trying.py
+    streamlit run trying.py
     ```
